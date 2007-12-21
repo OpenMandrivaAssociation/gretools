@@ -12,6 +12,7 @@ Release:	%release
 License:	GPL
 Group:		Games/Other
 Source:		http://theory.cs.iitm.ernet.in/~arvindn/gretools/1.2/%{name}-%{version}.tar.bz2
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 URL:		http://theory.cs.iitm.ernet.in/~arvindn/gretools/
 Buildarch:	noarch
 
