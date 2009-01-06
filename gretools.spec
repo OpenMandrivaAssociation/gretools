@@ -34,7 +34,7 @@ Requires(postun):         GConf2
 Requires(post):         /usr/bin/gconftool-2
 Requires(postun):         /usr/bin/gconftool-2
 
-BuildRequires:  pygtk2.0-devel >= %{gnome_python2_version}
+BuildRequires:  pygtk2.0-devel 
 
 %description
 Gretools consists of a synonym quiz and a word guessing game.
