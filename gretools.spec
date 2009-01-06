@@ -12,6 +12,7 @@ Release:	%release
 License:	GPL
 Group:		Games/Other
 Source:		http://theory.cs.iitm.ernet.in/~arvindn/gretools/1.2/%{name}-%{version}.tar.bz2
+Patch0:		gretools-1.2.4-fix-desktop-file.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 URL:		http://theory.cs.iitm.ernet.in/~arvindn/gretools/
 Buildarch:	noarch
@@ -26,8 +27,6 @@ Requires: pygtk2.0-libglade
 BuildRequires: scrollkeeper 
 BuildRequires: automake >= 0:1.6
 BuildRequires: autoconf >= 0:2.52
-BuildRequires: rpm >= 0:4.1
-BuildRequires: desktop-file-utils >= 0:0.2.92
 
 Requires(post):         GConf2
 Requires(postun):         GConf2
@@ -42,6 +41,7 @@ It is very useful for preparing for word tests.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure2_5x
@@ -51,15 +51,6 @@ It is very useful for preparing for word tests.
 rm -rf $RPM_BUILD_ROOT
 
 %makeinstall_std
-
-# Menu
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
-desktop-file-install --vendor="" \
-  --remove-category="Application" \
-  --add-category="X-MandrivaLinux-MoreApplications-Education" \
-  --add-category="Education" \
-  --add-category="GNOME" \
-  --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
 
 rm -rf $RPM_BUILD_ROOT%{_localstatedir}/scrollkeeper
 
