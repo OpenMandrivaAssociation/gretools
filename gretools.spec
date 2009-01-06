@@ -44,15 +44,13 @@ It is very useful for preparing for word tests.
 %setup -q
 
 %build
-
-%configure
-
+%configure2_5x
 %make 
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%makeinstall
+%makeinstall_std
 
 # Menu
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
