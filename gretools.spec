@@ -1,6 +1,6 @@
 %define name gretools
 %define version 1.2.4
-%define release %mkrel 5 
+%define release %mkrel 6
 
 %define localstatedir /var/lib
 %define _localstatedir %localstatedir
