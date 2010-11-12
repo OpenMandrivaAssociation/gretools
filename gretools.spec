@@ -1,14 +1,10 @@
-%define name gretools
-%define version 1.2.4
-%define release %mkrel 6
-
 %define localstatedir /var/lib
 %define _localstatedir %localstatedir
 
-Name:		%name
+Name:		gretools
 Summary:	Vocabulary building tool for GNOME
-Version:	%version
-Release:	%release
+Version:	1.2.4
+Release:	6
 License:	GPL
 Group:		Games/Other
 Source:		http://theory.cs.iitm.ernet.in/~arvindn/gretools/1.2/%{name}-%{version}.tar.bz2
