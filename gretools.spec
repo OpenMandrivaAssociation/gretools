@@ -4,7 +4,7 @@
 Name:		gretools
 Summary:	Vocabulary building tool for GNOME
 Version:	1.2.4
-Release:	%mkrel 7
+Release:	8
 License:	GPL
 Group:		Games/Other
 Source:		http://theory.cs.iitm.ernet.in/~arvindn/gretools/1.2/%{name}-%{version}.tar.bz2
