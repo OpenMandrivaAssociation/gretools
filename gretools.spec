@@ -10,7 +10,7 @@ Group:		Games/Other
 Source:		http://theory.cs.iitm.ernet.in/~arvindn/gretools/1.2/%{name}-%{version}.tar.bz2
 Patch0:		gretools-1.2.4-fix-desktop-file.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-URL:		http://theory.cs.iitm.ernet.in/~arvindn/gretools/
+URL:		https://theory.cs.iitm.ernet.in/~arvindn/gretools/
 Buildarch:	noarch
 
 Requires: python 
