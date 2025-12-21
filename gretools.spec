@@ -20,6 +20,8 @@ Requires: pyorbit
 Requires: pygtk2.0 
 Requires: pygtk2.0-libglade 
                                                                                                                
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: scrollkeeper 
 BuildRequires: automake >= 0:1.6
 BuildRequires: autoconf >= 0:2.52
